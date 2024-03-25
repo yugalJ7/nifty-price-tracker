@@ -1,6 +1,6 @@
 import React from "react";
 
-const Footer = () => {
+const Navbar = () => {
   return (
     <nav className="flex justify-between bg-white shadow-md h-16">
       <div className="navbar-cont_logo flex items-center ml-32 max-sm:ml-7 ">
@@ -28,4 +28,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default Navbar;
