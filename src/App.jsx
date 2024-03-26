@@ -7,10 +7,11 @@ import Graph from "./Components/Showdata/Graph";
 
 const App = () => {
   return (
-    <div className="">
+    <div>
       <Navbar />
       <PageHead />
       <Graph />
+      <Footer />
     </div>
   );
 };
