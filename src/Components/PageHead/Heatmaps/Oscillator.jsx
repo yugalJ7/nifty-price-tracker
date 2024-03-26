@@ -1,7 +1,7 @@
 import React from "react";
 import { FiInfo } from "react-icons/fi";
 import { IoIosArrowDown } from "react-icons/io";
-const Oscillator = () => {
+const Oscillator = ({ pointerPosition }) => {
   return (
     <div className="oscillators_container bg-white px-5 py-4 rounded-md">
       <div className="flex justify-between">
@@ -12,7 +12,7 @@ const Oscillator = () => {
         <div className="mt-5 flex flex-col items-center relative">
           <img className="w-80" src="/red-blue_bar.svg" alt="" />
           <img
-            className=" w-5 left-1/4 top-[27px] absolute max-[1024px]:top-5 max-[800px]:top-3 max-[762px]:top-[27px] max-[479px]:top-4"
+            className={`w-5 left-${pointerPosition} top-[27px] absolute max-[1024px]:top-5 max-[800px]:top-3 max-[762px]:top-[27px] max-[479px]:top-4`}
             src="/pointer-blue.svg"
             alt="pointer"
           />

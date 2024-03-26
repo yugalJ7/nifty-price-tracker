@@ -1,6 +1,6 @@
 import React from "react";
 import { FiInfo } from "react-icons/fi";
-const Summary = () => {
+const Summary = ({ pointerPosition }) => {
   return (
     <div className="summary_container bg-white px-5 py-4 rounded-md">
       <div className="flex justify-between">
@@ -11,7 +11,7 @@ const Summary = () => {
         <div className="mt-5 flex flex-col items-center relative">
           <img className="w-80" src="/red-green_bar.svg" alt="heatmapOne" />
           <img
-            className=" w-5 top-[27px] absolute max-[1024px]:top-5 max-[800px]:top-3 max-[762px]:top-[27px] max-[479px]:top-4"
+            className={` w-5 top-[27px] left-${pointerPosition} absolute max-[1024px]:top-5 max-[800px]:top-3 max-[762px]:top-[27px] max-[479px]:top-4`}
             src="/pointer-blue.svg"
             alt=""
           />

@@ -1,6 +1,6 @@
 import React from "react";
 import { IoIosArrowDown } from "react-icons/io";
-const Moving = () => {
+const Moving = ({ pointerPosition }) => {
   return (
     <div className="movin&averages_container bg-white px-5 py-4 rounded-md">
       <div className="flex justify-between">
@@ -10,7 +10,7 @@ const Moving = () => {
         <div className="mt-5 flex flex-col items-center relative">
           <img className="w-80" src="orange-blue_bar.svg" alt="" />
           <img
-            className=" w-5 top-[27px] absolute max-[1024px]:top-5 max-[800px]:top-3 max-[762px]:top-[27px] max-[479px]:top-4"
+            className={`w-5 top-[27px] left-${pointerPosition} absolute max-[1024px]:top-5 max-[800px]:top-3 max-[762px]:top-[27px] max-[479px]:top-4`}
             src="/pointer-blue.svg"
             alt=""
           />

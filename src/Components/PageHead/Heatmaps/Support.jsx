@@ -1,6 +1,6 @@
 import React from "react";
 import { FiInfo } from "react-icons/fi";
-const Support = () => {
+const Support = ({ pointerPosition }) => {
   return (
     <div className="support&resist_container bg-white px-5 py-4 rounded-md">
       <div className="flex justify-between">
@@ -11,7 +11,7 @@ const Support = () => {
         <div className="mt-5 relative">
           <img className="w-80" src="/straight-blue_bar.svg" alt="" />
           <img
-            className=" w-5 left-2/4 top-[27px] absolute "
+            className={`w-5 left-${pointerPosition} top-[27px] absolute `}
             src="/pointer-greenn.svg"
             alt="pointer"
           />
