@@ -5,7 +5,7 @@ import { BiUpArrowAlt } from "react-icons/bi";
 
 const NiftyPrice = () => {
   return (
-    <div className="nifty-cont_price flex mx-32 gap-2 pt-5 pb-4">
+    <div className="nifty-cont_price flex mx-32 gap-2 pt-5 pb-4 max-[1024px]:mx-14 max-[768px]:mx-28 max-[590px]:mx-9 max-[329px]:mx-4 max-[760px]:mt-28">
       <IoIosArrowBack size={22} className="mt-1" />
       <div className="flex flex-col">
         <div className="flex gap-2">

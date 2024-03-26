@@ -9,8 +9,13 @@ const Oscillator = () => {
         <FiInfo className="text-greyCustColor" />
       </div>
       <div className="mx-14 flex flex-col items-center gap-5 ">
-        <div className="mt-5 flex flex-col items-center">
+        <div className="mt-5 flex flex-col items-center relative">
           <img className="w-80" src="/red-blue_bar.svg" alt="" />
+          <img
+            className=" w-5 left-1/4 top-[27px] absolute max-[1024px]:top-5 max-[800px]:top-3 max-[762px]:top-[27px] max-[479px]:top-4"
+            src="/pointer-blue.svg"
+            alt="pointer"
+          />
           <div className="color_description flex mt-5 w-full justify-between">
             <div>
               <p className="text-sm text-center">4</p>

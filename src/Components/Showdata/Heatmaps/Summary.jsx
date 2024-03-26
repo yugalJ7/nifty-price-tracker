@@ -8,8 +8,13 @@ const Summary = () => {
         <FiInfo className="text-greyCustColor" />
       </div>
       <div className="mx-14 flex flex-col items-center gap-7">
-        <div className="mt-5 flex flex-col items-center">
+        <div className="mt-5 flex flex-col items-center relative">
           <img className="w-80" src="/red-green_bar.svg" alt="heatmapOne" />
+          <img
+            className=" w-5 top-[27px] absolute max-[1024px]:top-5 max-[800px]:top-3 max-[762px]:top-[27px] max-[479px]:top-4"
+            src="/pointer-blue.svg"
+            alt=""
+          />
           <div className="color_description flex mt-5 w-full justify-between">
             <div>
               <p className="text-sm text-center">3</p>
@@ -31,7 +36,7 @@ const Summary = () => {
             </div>
           </div>
         </div>
-        <div className="numbers grid grid-cols-[170px_minmax(170px,_1fr)_100px] grid-rows-2 ml-6">
+        <div className="numbers grid grid-cols-[170px_minmax(170px,_1fr)_100px] grid-rows-2 ml-6 max-[1024px]:grid-cols-[140px_minmax(140px,_1fr)_70px]">
           <div className="mt-2.5">
             <p className="text-[13px] font-normal">22076.49</p>
             <p className="text-xs text-greyCustColor">EMA (20)</p>

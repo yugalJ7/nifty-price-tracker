@@ -8,8 +8,13 @@ const Support = () => {
         <FiInfo className="text-greyCustColor" />
       </div>
       <div className="mx-14 flex flex-col items-center gap-16">
-        <div className="mt-5">
+        <div className="mt-5 relative">
           <img className="w-80" src="/straight-blue_bar.svg" alt="" />
+          <img
+            className=" w-5 left-2/4 top-[27px] absolute "
+            src="/pointer-greenn.svg"
+            alt="pointer"
+          />
           <div className="color_description flex flex-row mt-3 justify-between">
             <div className="flex gap-10">
               <p className="text-xs">S3</p>
@@ -24,7 +29,7 @@ const Support = () => {
           </div>
         </div>
 
-        <div className="numbers grid grid-cols-[170px_minmax(170px,_1fr)_100px] grid-rows-2 ml-6 ">
+        <div className="numbers grid grid-cols-[170px_minmax(170px,_1fr)_100px] grid-rows-2 ml-6 max-[1024px]:grid-cols-[140px_minmax(140px,_1fr)_70px]">
           <div className="mt-2.5">
             <p className="text-[13px] font-normal">21576.17</p>
             <p className="text-xs text-greyCustColor">S1</p>

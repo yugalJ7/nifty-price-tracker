@@ -7,8 +7,13 @@ const Moving = () => {
         <p className="text-sm font-semibold">Moving averages</p>
       </div>
       <div className="mx-14 flex flex-col items-center gap-5 ">
-        <div className="mt-5 flex flex-col items-center">
+        <div className="mt-5 flex flex-col items-center relative">
           <img className="w-80" src="orange-blue_bar.svg" alt="" />
+          <img
+            className=" w-5 top-[27px] absolute max-[1024px]:top-5 max-[800px]:top-3 max-[762px]:top-[27px] max-[479px]:top-4"
+            src="/pointer-blue.svg"
+            alt=""
+          />
           <div className="color_description flex mt-5 w-full justify-between">
             <div>
               <p className="text-sm text-center">10</p>
