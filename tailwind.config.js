@@ -4,9 +4,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        customBgColor: "#FBFDFF",
+        customBgColor: "#F7F9FC",
         lightGreyBdColor: "#EDEDED",
         cyanBlueColor: "#397ED1",
+        greyCustColor: "#9BABC6",
       },
       fontFamily: {
         openSans: ['"Open Sans"', "sans-serif"],
